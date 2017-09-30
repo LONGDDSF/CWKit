@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CWKit_Example' do
+  pod 'CWKit', :path => '../'
+
+  target 'CWKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
