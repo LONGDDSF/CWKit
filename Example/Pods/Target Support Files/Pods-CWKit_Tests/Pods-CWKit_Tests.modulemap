@@ -1,0 +1,6 @@
+framework module Pods_CWKit_Tests {
+  umbrella header "Pods-CWKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

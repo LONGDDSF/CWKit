@@ -1,0 +1,23 @@
+PODS:
+  - CWKit (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - CWKit (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  CWKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CWKit: d398606bb22f83ba30168fe73edcae07d709afec
+  FBSnapshotTestCase: '094f9f314decbabe373b87cc339bea235a63e07a'
+
+PODFILE CHECKSUM: 38499e3444a128135526aacceb2eb21bb05fa9ae
+
+COCOAPODS: 1.2.1

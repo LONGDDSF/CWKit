@@ -18,13 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    做了这么久iOS，总要留下点什么...对常用的东西做一个总结，以便可以迅速开发一个App。
                        DESC
 
   s.homepage         = 'https://github.com/LONGDDSF/CWKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'LONGDDSF' => 'chendongdong@syswin.com' }
+  s.author           = { 'LONGDDSF' => '784767574@qq.com }
   s.source           = { :git => 'https://github.com/LONGDDSF/CWKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
