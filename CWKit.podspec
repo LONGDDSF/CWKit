@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CWKit/Classes/**/*'
+  s.source_files = 'CWKit/**/*'
   
   # s.resource_bundles = {
   #   'CWKit' => ['CWKit/Assets/*.png']
