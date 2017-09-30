@@ -1,7 +1,5 @@
 use_frameworks!
 
-
-
 target 'CWKit_Example' do
   pod 'CWKit', :path => '../'
 

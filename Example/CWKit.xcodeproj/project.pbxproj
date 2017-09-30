@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1425CC50123FD731B3D11697 /* CWKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CWKit.podspec; path = ../CWKit.podspec; sourceTree = "<group>"; };
-		16C16989CEE65A106E415378 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1425CC50123FD731B3D11697 /* CWKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CWKit.podspec; path = ../CWKit.podspec; sourceTree = "<group>"; };
+		16C16989CEE65A106E415378 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5C3ED8DA5C9AAD3BFB6B2EFB /* Pods_CWKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* CWKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		A00FFBE3B96D18FF61B06B7E /* Pods_CWKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CC0AC746F5F0905B77A95D /* Pods-CWKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CWKit_Example/Pods-CWKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C0334C6E6649D1D04E85B008 /* Pods-CWKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWKit_Example/Pods-CWKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C9101172FEA2DDF0F09F5C65 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C9101172FEA2DDF0F09F5C65 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F193F8A37179BA2ABC210C36 /* Pods-CWKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWKit_Tests/Pods-CWKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = LONGDDSF;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = ECEY5MLVMM;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -524,6 +527,7 @@
 			baseConfigurationReference = A5CC0AC746F5F0905B77A95D /* Pods-CWKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ECEY5MLVMM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CWKit/CWKit-Prefix.pch";
 				INFOPLIST_FILE = "CWKit/CWKit-Info.plist";
@@ -539,6 +543,7 @@
 			baseConfigurationReference = C0334C6E6649D1D04E85B008 /* Pods-CWKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ECEY5MLVMM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CWKit/CWKit-Prefix.pch";
 				INFOPLIST_FILE = "CWKit/CWKit-Info.plist";

@@ -32,6 +32,8 @@
 		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */; };
 		BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8F070881F7F81D70076747E /* UIDevice+Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F070861F7F81D70076747E /* UIDevice+Ext.h */; };
+		C8F070891F7F81D70076747E /* UIDevice+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F070871F7F81D70076747E /* UIDevice+Ext.m */; };
 		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CB5D590843A6014ACD2E4A9F0760BC44 /* Pods-CWKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C5CC9BADD7232173F1B5CB742AA68E /* Pods-CWKit_Tests-dummy.m */; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
@@ -106,6 +108,8 @@
 		BB048B4608E949C3B099691ADD468FBF /* CWKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CWKit.xcconfig; sourceTree = "<group>"; };
 		BD166110BD44BD3F0AD1BC74661CBC09 /* Pods-CWKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CWKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C8F070861F7F81D70076747E /* UIDevice+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Ext.h"; sourceTree = "<group>"; };
+		C8F070871F7F81D70076747E /* UIDevice+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Ext.m"; sourceTree = "<group>"; };
 		CC12BCFA3FC0B8C307F5B38C673EDD12 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D0D7BE5136B0E265BFAAF907FEB38196 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20A026A7F06E65E4DA1E87DC5F37DA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -308,8 +312,18 @@
 		C82D099422BAFA7DB1ABF213217EE83E /* CWKit */ = {
 			isa = PBXGroup;
 			children = (
+				C8F070851F7F81D70076747E /* UIDevice */,
 			);
 			path = CWKit;
+			sourceTree = "<group>";
+		};
+		C8F070851F7F81D70076747E /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				C8F070861F7F81D70076747E /* UIDevice+Ext.h */,
+				C8F070871F7F81D70076747E /* UIDevice+Ext.m */,
+			);
+			path = UIDevice;
 			sourceTree = "<group>";
 		};
 		F35791481CAFDD8E7715AE1B44687328 /* Core */ = {
@@ -348,6 +362,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F070881F7F81D70076747E /* UIDevice+Ext.h in Headers */,
 				473DB59131B8FB8DB57D5B037A5D8A47 /* CWKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B9C2F1D874768EA4A5576459FD54A0C /* CWKit-dummy.m in Sources */,
+				C8F070891F7F81D70076747E /* UIDevice+Ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
