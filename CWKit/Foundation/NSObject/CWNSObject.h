@@ -8,5 +8,8 @@
 #ifndef CWNSObject_h
 #define CWNSObject_h
 
+#import "NSObject+Ext.h"
+
+#import "NSObject+Swizzling.h"
 
 #endif /* CWNSObject_h */

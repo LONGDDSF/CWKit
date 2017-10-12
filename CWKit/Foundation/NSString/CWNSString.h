@@ -8,5 +8,8 @@
 #ifndef CWNSString_h
 #define CWNSString_h
 
+#improt "NSString+Search.h"
+
+#import "NSString+Transform.h"
 
 #endif /* CWNSString_h */

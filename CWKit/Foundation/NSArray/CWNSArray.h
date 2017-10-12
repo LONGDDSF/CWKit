@@ -8,5 +8,7 @@
 #ifndef CWNSArray_h
 #define CWNSArray_h
 
+#import "NSArray+NSRangeException"
+#import "NSMutableArray+OperationException"
 
 #endif /* CWNSArray_h */
