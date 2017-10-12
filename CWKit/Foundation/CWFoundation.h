@@ -9,8 +9,13 @@
 #define CWFoundation_h
 
 #import "CWFoundation.h"
+
 #import "CWNSObject.h"
+
 #import "CWNSArray.h"
+
 #import "CWNSString.h"
+
+#improt "CWNSDictionary.h"
 
 #endif /* CWFoundation_h */
