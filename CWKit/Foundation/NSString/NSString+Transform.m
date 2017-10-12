@@ -25,7 +25,7 @@
 + (BOOL)containsChinese:(NSString *)string
 {
     BOOL isContain = NO;
-    
+
     for(int i = 0; i < string.length; i++) {
        
         int a = [string characterAtIndex:i];
