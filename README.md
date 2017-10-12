@@ -1,4 +1,4 @@
-# CWKit
+CWKit
 
 [![CI Status](http://img.shields.io/travis/LONGDDSF/CWKit.svg?style=flat)](https://travis-ci.org/LONGDDSF/CWKit)
 [![Version](https://img.shields.io/cocoapods/v/CWKit.svg?style=flat)](http://cocoapods.org/pods/CWKit)
@@ -7,7 +7,7 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run 'sh AutoTask.h' from the current directory first in terminal application.
 
 ## Requirements
 
