@@ -22,7 +22,7 @@ pod 'CWKit'
 
 ## Author
 
-LONGDDSF, chendongdong@syswin.com
+LONGDDSF, 784767574@qq.com
 
 ## License
 
