@@ -21,7 +21,7 @@
             
             [objc_getClass("__NSArrayM") swizzleMethod:@selector(insertObject:atIndex:) swizzledSelector:@selector(mutableInsertObject:atIndex:)];
     
-            [objc_getClass("__NSArrayM") swizzleMethod:@selector(addObject:) swizzledSelector:@selector(mutableAddObject:)];
+//            [objc_getClass("__NSArrayM") swizzleMethod:@selector(addObject:) swizzledSelector:@selector(mutableAddObject:)];
             
             [objc_getClass("__NSArrayM") swizzleMethod:@selector(integerValue) swizzledSelector:@selector(replace_integerValue)];
         }

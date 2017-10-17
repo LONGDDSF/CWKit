@@ -16,6 +16,4 @@
 
 #import "CWNSString.h"
 
-#improt "CWNSDictionary.h"
-
 #endif /* CWFoundation_h */

@@ -16,6 +16,3 @@
 
 @end
 
-@interface NSNull (NilSafe)
-
-@end

@@ -7,8 +7,7 @@
 //
 
 #import "CWViewController.h"
-
-//#import ""
+//#import "CWFoundation.h"
 
 @interface CWViewController ()
 
@@ -20,6 +19,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSMutableArray * mArr = [[NSMutableArray alloc] init];
+    
+    NSArray *arr = nil;
+    
+    [mArr addObject:arr];
+    
+    NSMutableDictionary *mDic = [[NSMutableDictionary alloc] init];
+    
+    [mDic setValue:arr forKey:@"arr"];
+    [mDic setObject:arr forKey:@"arr"];
 }
 
 - (void)didReceiveMemoryWarning

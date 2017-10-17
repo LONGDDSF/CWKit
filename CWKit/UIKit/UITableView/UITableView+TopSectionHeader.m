@@ -95,5 +95,4 @@ static NSString *kHeaderViewChagedTo;
     return objc_getAssociatedObject(self, &kHeaderViewChagedTo);
 }
 
-
 @end
