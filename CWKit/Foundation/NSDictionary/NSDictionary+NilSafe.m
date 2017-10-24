@@ -76,23 +76,19 @@
 }
 
 - (void)gl_setObject:(id)anObject forKey:(id<NSCopying>)aKey {
-    if (!aKey) {
-        return;
+    
+    if (anObject && aKey) {
+        
+        [self gl_setObject:anObject forKey:aKey];
     }
-    if (!anObject) {
-        anObject = [NSNull null];
-    }
-    [self gl_setObject:anObject forKey:aKey];
 }
 
 - (void)gl_setObject:(id)obj forKeyedSubscript:(id<NSCopying>)key {
-    if (!key) {
-        return;
+    
+    if (obj && key) {
+        
+        [self gl_setObject:obj forKeyedSubscript:key];
     }
-    if (!obj) {
-        obj = [NSNull null];
-    }
-    [self gl_setObject:obj forKeyedSubscript:key];
 }
 
 @end
