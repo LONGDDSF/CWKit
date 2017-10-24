@@ -12,4 +12,6 @@
 
 #import "NSString+Transform.h"
 
+#import "NSString+Verify.h"
+
 #endif /* CWNSString_h */
