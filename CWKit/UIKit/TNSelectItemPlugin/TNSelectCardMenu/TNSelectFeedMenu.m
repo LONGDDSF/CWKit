@@ -20,6 +20,11 @@
     return self;
 }
 
+- (void)reqDataAndReload
+{
+    [super reqDataAndReload];
+}
+
 - (void)exchangeSelectedItemWithFeedID:(NSString *)feedID
 {
     TNSelectItemCellModel *model = [[self aInteractor] modelWithFeedId:feedID];

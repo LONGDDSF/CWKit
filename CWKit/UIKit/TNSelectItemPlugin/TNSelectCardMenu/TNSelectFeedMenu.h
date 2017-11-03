@@ -10,6 +10,8 @@
 
 @interface TNSelectFeedMenu : TNSelectItemMenu
 
+- (void)reqDataAndReload;
+
 - (void)exchangeSelectedItemWithFeedID:(NSString *)feedID;
 
 - (void)reloadDataWithFeedID:(NSString *)feedID model:(void(^)(TNSelectItemCellModel *model))modelBlock;

@@ -55,6 +55,8 @@
         
         [wSelf exchangeCurrentSelectItem:wSelf.animateShowView.tnInteractor.currentSelectModel];
     }];
+    
+//    self.animateShowView.tnInteractor
 }
 
 - (void)didSelectedItem:(id)obj
