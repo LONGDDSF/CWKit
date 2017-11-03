@@ -15,6 +15,8 @@
 //弹窗显示的位置（default = keywindow）
 @property (weak, nonatomic) UIView *menuContainerView;
 
+@property (strong, nonatomic) TNSelectItemListView *animateShowView;
+
 @property (strong, nonatomic, readonly) TNSelectItemCellModel *currentSelectItem;
 
 - (void)reqDataAndReload;

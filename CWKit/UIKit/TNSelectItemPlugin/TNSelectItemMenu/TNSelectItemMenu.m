@@ -15,9 +15,9 @@
 
 @property (strong, nonatomic) UILabel *LblMsgAlert;
 
-@property (strong, nonatomic) TNSelectItemListView *animateShowView;
-
 @property (strong, nonatomic) UIView *containerBcgView;
+
+@property (strong, nonatomic) TNSelectItemCellModel *currentSelectItem;
 
 @property (assign, nonatomic) CGFloat topSpaceOfMenuContainer;
 
@@ -29,10 +29,6 @@
 
 @implementation TNSelectItemMenu
 
-@synthesize menuContainerView = _menuContainerView;
-
-@synthesize currentSelectItem = _currentSelectItem;
-
 - (instancetype)init
 {
     self = [super init];
@@ -42,7 +38,6 @@
         
         [self addSubview:self.LblMsgAlert];
         [self addSubview:self.imageView];
-        
         [self updateLayoutImageView];
         [self updateLaytouLblMsgAlert];
         
@@ -141,6 +136,7 @@
         self.animateShowView.alpha = 0;
         
         [self.containerBcgView layoutIfNeeded];
+        
     } completion:^(BOOL finished) {
        
         self.hasShow = NO;

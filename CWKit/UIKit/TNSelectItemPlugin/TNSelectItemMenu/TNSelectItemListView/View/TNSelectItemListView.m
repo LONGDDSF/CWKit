@@ -43,16 +43,6 @@
     [self.collectionView reloadData];
 }
 
-- (NSIndexPath *)indexPathForItemModel:(TNSelectItemCellModel *)model
-{
-    
-}
-
-- (void)reloadDataAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
-
 #pragma mark - ------------------ private
 
 
@@ -120,12 +110,6 @@
     if (!_tnInteractor) {
         
         _tnInteractor = [[TNSelectItemListInterator alloc] init];
-        
-//        __weak typeof(self) wSelf = self;
-//        [_tnInteractor setBlockDidGetAllData:^(BOOL success) {
-//
-//            [wSelf reloadData];
-//        }];
     }
     
     return _tnInteractor;

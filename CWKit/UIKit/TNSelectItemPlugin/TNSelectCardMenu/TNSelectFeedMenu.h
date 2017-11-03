@@ -6,10 +6,11 @@
 //
 
 #import "TNSelectItemMenu.h"
+#import "TNSelectFeedListInterator.h"
 
 @interface TNSelectFeedMenu : TNSelectItemMenu
 
-- (void)exchangeSelectItemWithFeedID:(NSString *)feedID;
+- (void)exchangeSelectedItemWithFeedID:(NSString *)feedID;
 
 - (void)reloadDataWithFeedID:(NSString *)feedID model:(void(^)(TNSelectItemCellModel *model))modelBlock;
 

@@ -35,6 +35,8 @@
 
 - (void)reloadDataWithFeedID:(NSString *)feedID model:(void(^)(TNSelectItemCellModel *model))modelBlock
 {
+    self.currentFeedID = feedID;
+    
     __weak typeof(self) wSelf = self;
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{

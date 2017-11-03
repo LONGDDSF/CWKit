@@ -9,6 +9,8 @@
 
 @interface TNSelectFeedListInterator : TNSelectItemListInterator
 
+@property (strong, nonatomic) NSString *currentFeedID;
+
 - (void)reqAllCards;
 
 - (TNSelectItemCellModel *)modelWithFeedId:(NSString *)feedID;

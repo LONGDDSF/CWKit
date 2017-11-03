@@ -45,6 +45,8 @@
 
 - (void)exchangeCurrentSelectItem:(TNSelectItemCellModel *)model
 {
+    self.currentSelectModel.isSelected = NO;
+    
     model.isSelected = YES;
     
     if (self.blockDidGetAllData) {
