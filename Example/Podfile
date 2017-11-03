@@ -5,6 +5,7 @@ platform :ios, '8.0'
 target 'CWKit_Example' do
   pod 'CWKit', :path => '../'
 
+
   target 'CWKit_Tests' do
     inherit! :search_paths
 
