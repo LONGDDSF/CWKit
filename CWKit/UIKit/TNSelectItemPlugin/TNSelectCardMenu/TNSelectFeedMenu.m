@@ -22,7 +22,7 @@
 
 - (void)reloadData
 {
-    [super reqDataAndReload];
+    [super reloadData];
     
     [[self aInteractor] reqAllCards];
 }
