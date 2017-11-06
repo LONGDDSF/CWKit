@@ -10,7 +10,7 @@
 
 @interface TNSelectFeedMenu : TNSelectItemMenu
 
-- (void)reqDataAndReload;
+- (void)reloadData;
 
 - (void)exchangeSelectedItemWithFeedID:(NSString *)feedID;
 

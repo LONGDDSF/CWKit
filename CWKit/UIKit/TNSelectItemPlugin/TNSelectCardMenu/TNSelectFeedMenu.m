@@ -20,9 +20,11 @@
     return self;
 }
 
-- (void)reqDataAndReload
+- (void)reloadData
 {
     [super reqDataAndReload];
+    
+    [[self aInteractor] reqAllCards];
 }
 
 - (void)exchangeSelectedItemWithFeedID:(NSString *)feedID

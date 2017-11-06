@@ -19,7 +19,7 @@
 
 @property (strong, nonatomic, readonly) TNSelectItemCellModel *currentSelectItem;
 
-- (void)reqDataAndReload;
+- (void)reloadData;
 
 - (void)didSelectedItem:(id)obj;
 

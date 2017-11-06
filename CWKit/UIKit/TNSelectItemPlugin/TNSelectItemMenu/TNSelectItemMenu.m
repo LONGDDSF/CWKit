@@ -48,15 +48,13 @@
     return self;
 }
 
-- (void)reqDataAndReload
+- (void)reloadData
 {
     __weak typeof(self) wSelf = self;
     [self.animateShowView.tnInteractor setBlockDidGetAllData:^(BOOL success) {
         
         [wSelf exchangeCurrentSelectItem:wSelf.animateShowView.tnInteractor.currentSelectModel];
     }];
-    
-//    self.animateShowView.tnInteractor
 }
 
 - (void)didSelectedItem:(id)obj
