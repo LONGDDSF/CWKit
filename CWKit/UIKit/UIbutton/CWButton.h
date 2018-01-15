@@ -9,6 +9,7 @@
 
 @interface CWButton : UIView
 
+//图片在上，title在下
 @property (strong, nonatomic) UIImageView *imageView;
 
 @property (strong, nonatomic) UILabel *lblTitle;
