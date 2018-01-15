@@ -17,8 +17,6 @@
     self = [super init];
     if (self) {
         
-        self.lblTitleShouldShow = YES;
-        
         [self addViews];
 
         [self addTapGestureWithSel:@"tapEventHandle" target:self];
