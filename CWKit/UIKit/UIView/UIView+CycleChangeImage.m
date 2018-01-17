@@ -109,7 +109,8 @@ static char keyRuntimeSetCCIblockDidChangeImage;
 
 - (void)updateBtnImage
 {
-    UIImage *img = [[self tool_allImages] objectAtIndex:self.curSelIdx];
+    NSString *imgName = [[self tool_allImages] objectAtIndex:self.curSelIdx];
+    UIImage *img = [UIImage imageNamed:imgName];
     
     [self.cycleImageChangebtn setImage:img forState:UIControlStateNormal];
     
