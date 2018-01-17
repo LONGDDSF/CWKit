@@ -79,6 +79,8 @@ static char keyRuntimeSetCCIblockDidChangeImage;
 
 -(void)upadteWithDic:(NSDictionary *)imageAndValueDic
 {
+    self.dicImgAndStates  = imageAndValueDic;
+
     if (!self.cycleImageChangebtn.superview) {
         
         [self addSubview:self.cycleImageChangebtn];
@@ -101,6 +103,8 @@ static char keyRuntimeSetCCIblockDidChangeImage;
         
         self.curSelIdx = 0;
     }
+    
+    [self updateBtnImage];
 }
 
 - (void)updateBtnImage
