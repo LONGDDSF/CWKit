@@ -11,17 +11,17 @@ static const NSInteger kCWListViewCountOfRow = 4;
 
 typedef void(^BlockListItemConfig)(UIView *itemView, NSInteger idx);
 
-@protocol CWListViewDataSource
-
-- (NSInteger)numberInPerRow;
-
-- (UIView *)viewForIndex:(NSInteger)idx;
-
-@end
+//@protocol CWListViewDataSource
+//
+//- (NSInteger)numberInPerRow;
+//
+//- (UIView *)viewForIndex:(NSInteger)idx;
+//
+//@end
 
 @interface CWListView : UIView
 
-@property (weak, nonatomic) id <CWListViewDataSource>dataSource;
+//@property (weak, nonatomic) id <CWListViewDataSource>dataSource;
 
 //四周边距
 @property (assign, nonatomic) UIEdgeInsets cEdgeInsets;
