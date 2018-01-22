@@ -39,7 +39,9 @@
     
 //    [self testSelectItemView];
     
-    [self test_menu];
+//    [self test_menu];
+    
+    [self debug_listview];
 }
 
 - (void)didReceiveMemoryWarning
@@ -79,13 +81,21 @@
         make.top.mas_equalTo(44);
         make.height.mas_equalTo(50);
     }];
-    
-    
 }
 
 - (void)debug_listview
 {
+    CWListView *listview = [[CWListView alloc] init];
     
+    [self.view addSubview:listview];
+    [listview mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.bottom.mas_equalTo(0);
+    }];
+    
+    [listview reloadDataWithTotleCount:20 itemConfig:^(UIView *itemView, NSInteger idx) {
+        
+        itemView.backgroundColor = [UIColor grayColor];
+    }];
 }
 
 @end
