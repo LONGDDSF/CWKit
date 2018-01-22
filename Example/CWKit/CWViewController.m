@@ -89,13 +89,18 @@
     
     [self.view addSubview:listview];
     [listview mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.mas_equalTo(0);
+        make.left.right.top.mas_equalTo(0);
     }];
     
     [listview reloadDataWithTotleCount:20 itemConfig:^(UIView *itemView, NSInteger idx) {
         
         itemView.backgroundColor = [UIColor grayColor];
     }];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [listview setCEdgeInsets:UIEdgeInsetsMake(10, 20, 10, 40)];
+    });
 }
 
 @end

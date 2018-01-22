@@ -26,10 +26,11 @@ typedef void(^BlockListItemConfig)(UIView *itemView, NSInteger idx);
 //四周边距
 @property (assign, nonatomic) UIEdgeInsets cEdgeInsets;
 
+//item在每个小空间的位置
+@property (assign, nonatomic) UIEdgeInsets itemEdgeInsets;
+
 //每一行的个数
 @property (assign, nonatomic) NSInteger countOfPerRow;
-
-- (void)reloadData;
 
 - (void)reloadDataWithTotleCount:(NSInteger)count itemConfig:(BlockListItemConfig)blockConfig;
 
