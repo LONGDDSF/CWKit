@@ -23,10 +23,10 @@ typedef void(^BlockListItemConfig)(UIView *itemView, NSInteger idx);
 
 //@property (weak, nonatomic) id <CWListViewDataSource>dataSource;
 
-//四周边距
+//四周边距（default UIEdgeInsetsMake(2, 2, 2, 2) ）
 @property (assign, nonatomic) UIEdgeInsets cEdgeInsets;
 
-//item在每个小空间的位置
+//item在每个小空间的位置（default UIEdgeInsetsMake(2, 2, 2, 2) ）
 @property (assign, nonatomic) UIEdgeInsets itemEdgeInsets;
 
 //每一行的个数
